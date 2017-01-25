@@ -1,0 +1,94 @@
+body{
+	margin:0;
+	overflow-x:hidden;
+	padding:0;
+}
+.container{
+	width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    min-height: 700px;
+}
+.container .donation-box-outer{	
+    width: 250px;
+    height: auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    float: left;
+    margin-top: 49px;
+}
+.container .donation-box{
+    width: 100%;
+    float:left;
+    height: auto;
+    background: #fff;
+    box-shadow: 1px 5px 5px #ccc;
+    border: 1px solid #ccc;  
+}
+.container .donation-box .progressbar{
+	width:0%;
+	height:10px;
+	background:#f16c45;
+	float:left;
+}
+.container .donation-box .content{
+	padding: 20px;
+    float: left;
+    width: 100%;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+}
+.container .donation-box .content p{
+  font-family:arial;
+  font-size:12px;
+}
+.container .donation-box .content p .orange{
+	color:orange;
+}
+.container .donation-box .content .form-group input[type="text"]{
+	width: 47%;
+    margin-right: 3%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    color: #000;
+    font-weight: bold;
+}
+.container .donation-box .content .form-group input[type="button"]{
+	width: 33%;
+	margin-left:3%;
+    background: #1dc432;
+    box-sizing: content-box;
+    padding: 12px;
+    border: 0;
+    border-radius: 5px;
+    color:#fff;
+    font-size:14px;
+    cursor:pointer;
+}
+.container .donation-box .content .why{
+   text-decoration:none;
+   color:#0c83af;
+   float:left;
+   font-size:12px;padding-top:5px;
+}
+.container .donation-box-outer .btn-group{
+	float: left;
+    width: 100%;
+    margin-top: 20px;
+}
+.container .donation-box-outer .btn-group button{
+	 background-color: #fbfbfb;
+    color: #615252;
+    font-size: 11px;
+    font-family: sans-serif;
+    width: 49%;
+    padding: 7px;
+    box-shadow: 1px 2px 1px #ccc;
+    box-sizing: border-box;
+    border: 1px solid #d4d4d4;
+
+
+}

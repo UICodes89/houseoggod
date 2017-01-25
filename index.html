@@ -1,0 +1,53 @@
+<html>
+<head>
+	<title>House of God</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="donation-box-outer">
+			<div class="donation-box">
+				   <span class="progressbar"></span>
+					<div class="content">
+						<p>
+							<span class="orange">only 3 day left</span> to fund this project
+						</p>
+						<p>
+							join the other 42 donarswho have alerady supported this project. Every dollar help
+						</p>
+						<div class="form-group">
+							 <input type="text" name="amount" placeholder="$200" class="input">
+							 <input type="button" value="Give Now" class="give-now">
+						</div>
+						<a href="javascript:void(0);" class="why">why give $50?</a>
+					</div>
+			</div>
+			<div class="btn-group">
+				<button>Save for later</button>
+				<button>Tell your friends</button>
+			</div>
+		</div>
+	</div>
+	<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function(){
+      var giveNow = $('.give-now'),
+          input = $('.input'),
+          progressBar = $('.progressbar');
+ 			var val =0;
+ 		 giveNow.on("click", function(){
+            val += parseInt(input.val());
+            if(val > 200){
+            	alert('Please enter value 200 and below');
+            }else{
+            	progressBar.css({'width':val/2 +'%'})
+            }
+ 		 });
+
+    });
+  </script>
+</body>
+</html>
